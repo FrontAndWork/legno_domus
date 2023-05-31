@@ -1,0 +1,40 @@
+@use "./variables";
+
+.title-h1 {
+	color: variables.$color-base1;
+	font-size: 49px;
+	font-weight: 500;
+	line-height: 114%;
+}
+
+.title-h2 {
+	color: variables.$color-base1;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 146%;
+}
+
+.title-h3 {
+	color: variables.$color-base1;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 156%;
+}
+
+.sub-title-text {
+	color: variables.$color-base1;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 146%;
+}
+
+.sub-title-img {
+	font-size: 15px;
+	line-height: 187%;
+}
+
+.ul-green {
+	line-height: 156%;
+	text-decoration-line: underline;
+	color: variables.$color-primary1;
+}

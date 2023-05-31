@@ -1,0 +1,190 @@
+@use "../../common" as common;
+
+.aside {
+	height: 100%;
+	position: relative;
+	color: #ffffff;
+	background-color: common.$color-primary3;
+	width: 300px;
+	padding: 38px 0px 0px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 300px;
+		height: 1px;
+		top: 147px;
+		left: 0px;
+		background-color: common.$color-secondary10;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 300px;
+		height: 1px;
+		top: 596px;
+		left: 0px;
+		background-color: common.$color-secondary10;
+	}
+
+	&__logo {
+		margin-bottom: 65px;
+		margin-left: 59px;
+	}
+
+	&__tel {
+		padding-left: 27px;
+		margin-bottom: 25px;
+		margin-left: 59px;
+
+		a {
+			position: relative;
+			color: common.$color-secondary2;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 250%;
+			&::before {
+				position: absolute;
+				display: block;
+				content: url(../../../icon/tel-header.svg);
+				top: -7px;
+				left: -27px;
+			}
+		}
+	}
+
+	&__nav {
+		height: 315px;
+		margin-bottom: 71px;
+		margin-left: 59px;
+	}
+
+	&__nav-list {
+		height: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__list-link {
+		color: common.$color-primary4;
+		font-weight: 700;
+		line-height: 250%;
+		text-decoration: 0.1s;
+		&:hover {
+			color: common.$color-secondary2;
+		}
+	}
+
+	&__search-body {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&__search-btc {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 58px;
+		height: 50px;
+		padding: 0px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-color: transparent;
+		border-right: 1px solid common.$color-secondary8;
+		border-top: 1px solid common.$color-secondary8;
+		border-bottom: 1px solid common.$color-secondary8;
+		border-left: none;
+
+		&:active {
+			background-color: common.$color-base2;
+		}
+		&:active svg path {
+			fill: common.$color-base1;
+		}
+	}
+
+	&__search-input {
+		margin-bottom: 20px;
+		width: 182px;
+		height: 50px;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 200%;
+		background-color: transparent;
+		border-left: 1px solid common.$color-secondary8;
+		border-top: 1px solid common.$color-secondary8;
+		border-bottom: 1px solid common.$color-secondary8;
+		border-right: none;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		padding-left: 20px;
+
+		&:focus {
+			background-color: common.$color-base2;
+			outline: 0;
+		}
+
+		&::-webkit-input-placeholder {
+			color: common.$color-secondary8;
+		 }
+
+		 &:-moz-placeholder {
+		color: common.$color-secondary8;
+		 }
+
+		 &::-moz-placeholder {
+		color: common.$color-secondary8;
+		 }
+
+		 &:-ms-input-placeholder {
+		color: common.$color-secondary8;
+		 }
+	}
+
+	&__callback-btn {
+		margin-left: 30px;
+		margin-bottom: 30px;
+		transition-duration: 0.1s;
+		@extend .button-secondary3;
+	}
+
+	&__social {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+	&__social-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		column-gap: 19px;
+	}
+
+	&__social-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition-duration: 0.1s;
+
+		&:hover svg path {
+			fill: common.$color-secondary2
+		}
+	}
+
+	&__copy-text {
+		color: common.$color-secondary8;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 208%;
+		text-align: center;
+	}
+}

@@ -1,0 +1,139 @@
+@use "./variables";
+
+//* Padding left и right выставляем опционально!
+
+//! Кнопка зелённая заливка
+.button-primary1 {
+	display: inline-block;
+	color: variables.$color-base2;
+	background-color: variables.$color-primary1;
+	text-decoration: none;
+	max-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	border-radius: 3px;
+	padding: 10px 46px 10px;
+	transition-duration: 0.1s;
+
+	&:hover {
+		background-color: variables.$color-secondary5;
+	}
+
+	&:active { 
+		padding: 13px 46px 7px;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+}
+
+//! Кнопка без заливки,чёрный контур!
+.button-primary2 {
+	display: inline-block;
+	color: variables.$color-base1;
+	background-color: transparent;
+	text-decoration: none;
+	max-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	border-radius: 3px;
+	border: 1px solid variables.$color-base1;
+	padding: 10px 36px 10px;
+	transition-duration: 0.1s;
+
+	&:hover {
+		color: variables.$color-base2;
+		background-color: variables.$color-base1;
+	}
+
+	&:active {
+		padding: 13px 36px 7px;
+		background-color: variables.$color-secondary6;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+
+}
+
+//! Кнопка с заливкой,для header!
+.button-primary3 {
+	display: inline-block;
+	color: variables.$color-primary4;
+	background-color: variables.$color-secondary9;
+	max-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	border-radius: 3px;
+	padding: 10px 55px 10px;
+	transition-duration: 0.1s;
+	border: none;
+
+	&:hover {
+		background-color: variables.$color-secondary8;
+	}
+
+	&:active {
+		padding: 13px 55px 7px;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+}
+
+//! Кнопка слайдера "вправо",белая(70x70) 
+.button-secondary1 {
+	display: inline-block;
+	max-width: 70px;
+	max-height: 70px;
+	padding: 19px 27px;
+	background-color: variables.$color-base2;
+	border: none;
+
+	&:hover {
+		background-color: variables.$color-primary1;
+	}
+	&:hover svg line{
+		stroke: variables.$color-base2;
+	}
+}
+
+//! Кнопка слайдера "влево",белая(70x70) 
+.button-secondary2 {
+	display: inline-block;
+	max-width: 70px;
+	max-height: 70px;
+	padding: 19px 27px;
+	background-color: variables.$color-base2;
+	border: none;
+
+	&:hover {
+		background-color: variables.$color-primary1;
+	}
+	&:hover svg line{
+		stroke: variables.$color-base2;
+	}
+
+}
+
+//! Кнопка "Заказать звонок"
+.button-secondary3 {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px 55px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 200%;
+	text-align: center;
+	color: variables.$color-primary4;
+	background-color: variables.$color-secondary9;
+	border: none;
+	border-radius: 3px;
+
+	&:hover {
+		background-color: variables.$color-secondary8;
+	}
+	&:active {
+		padding: 13px 55px 7px;
+		background-color: variables.$color-secondary9;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+}
+
