@@ -1,0 +1,56 @@
+@use "../../common";
+
+.footer {
+	max-height: 142px;
+	margin-bottom: 95px;
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__text {
+		max-width: 630px;
+		p {
+			color: common.$color-base1;
+			line-height: 156%;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 2px;
+		padding: 22px 89px 30px 42px;
+		background-color: common.$color-primary2;
+	}
+
+	&__tel {
+		margin-left: 30px;
+		a {
+			color: common.$color-base1;
+			position: relative;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 250%;
+			&:before {
+				content: url(../../../icon/tel.svg);
+				position: absolute;
+				display: block;
+				top: -7px;
+				left: -30px;
+			}
+		}
+	}
+
+	&__adderss {
+		p {
+			color: common.$color-base1;
+			line-height: 156%;
+		}
+	}
+}
