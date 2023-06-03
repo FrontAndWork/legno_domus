@@ -1,0 +1,145 @@
+@use "../../common";
+
+.guarantees {
+	padding: 98px 0px 80px;
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 1600px;
+		height: 1px;
+		top: 0px;
+		left: -75px;
+		background-color: common.$color-secondary11;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__items {
+		max-width: 888px;
+	}
+
+	&__items-top {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 16px;
+
+		margin-bottom: 28px;
+	}
+
+	&__items-title {
+		@extend .title-h1;
+		margin-bottom: 28px;
+	}
+
+	&__items-body {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		// row-gap: 110px;
+		margin-bottom: 68px;
+		max-height: 615px;
+		
+	}
+	
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		max-width: 400px;
+		max-height: 160px;
+		margin-bottom: 82px;
+
+		&:nth-child(1){
+			margin-bottom: 110px;
+		}
+		&:nth-child(5){
+			margin-bottom: 0px;
+		}
+		&:nth-child(6){
+			margin-bottom: 0px;
+		}
+	}
+
+	&__item-title {
+		h2 {
+			@extend .title-h2;
+		}
+	}
+
+	&__item-text {
+		p {
+			line-height: 156%;
+		}
+	}
+
+	&__test {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 458px;
+		padding: 68px 66px 0px;
+		margin-top: 56px;
+		background-color: common.$color-primary2;
+	}
+
+	&__test-text {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: url(../../../images/common/line.svg);
+			display: block;
+			bottom: -20px;
+			left: -66px;
+		}
+	}
+
+	&__text-title {
+		margin-bottom: 20px;
+		h2{
+			@extend .title-h2;
+		}
+	}
+
+	&__text-disc {
+		margin-bottom: 26px;
+		p {
+			line-height: 156%;
+		}
+	}
+
+	&__text-btn {
+		margin-bottom: 65px;
+		@extend .button-primary1;
+	}
+
+	&__test-img {
+		position: relative;
+		height: 400px;
+		background-color: common.$color-primary2;
+	}
+	
+	&__img-logo {
+		position: absolute;
+		z-index: 0;
+		left: -145px;
+		bottom: 223px;
+	}
+
+	&__test-foto {
+		position: absolute;
+		z-index: 1;
+		bottom: 0px;
+		left: -140px;
+	}
+}

@@ -1,8 +1,7 @@
 @use "../../common";
 
 .footer {
-	max-height: 142px;
-	margin-bottom: 95px;
+	padding-bottom: 95px;
 
 	&__inner {
 		display: flex;

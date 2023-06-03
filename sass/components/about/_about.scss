@@ -1,0 +1,135 @@
+@use "../../common";
+
+.about {
+	padding: 80px 0px 55px;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 1600px;
+		height: 1px;
+		top: 0px;
+		left: -75px;
+		background-color: common.$color-secondary11;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__advantage {
+		max-width: 645px;
+	}
+
+	&__advantage-title {
+		@extend .title-h1;
+		margin-bottom: 27px;
+	}
+
+	&__advantage-text {
+		@extend .title-h2;
+		margin-bottom: 44px;
+	}
+
+	&__title-list {
+		@extend .title-h2;
+		margin-bottom: 11px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 18px;
+	}
+
+	&__list-item {
+		position: relative;
+		line-height: 156%;
+		padding-left: 26px;
+		&::before {
+			content: url(../../../icon/circle.svg);
+			position: absolute;
+			display: block;
+			top: 0px;
+			left: 0px;
+		}
+	}
+
+
+
+	&__offers {
+		max-width: 715px;
+	}
+
+	&__offers-img {
+		width: 715px;
+		height: 312px;
+		background-image: url(../../../images/about/020.jpg);
+		background-repeat: no-repeat;
+		background-position:center center;
+		background-size: cover;
+		margin: 20px 0 38px;
+	}
+
+	&__offers-title {
+		@extend .title-h2;
+		margin-bottom: 11px;
+	}
+
+	&__offers-subtitle {
+		line-height: 156%;
+		margin-bottom: 18px;
+	}
+
+	&__type-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 45px;
+	}
+
+	&__type-item {
+		position: relative;
+		line-height: 222%;
+		padding-left: 26px;
+		text-transform: lowercase;
+		&::before {
+			content: url(../../../icon/circle.svg);
+			position: absolute;
+			display: block;
+			top: 0px;
+			left: 0px;
+		}
+	}
+
+	&__offers-text {
+		line-height: 156%;
+		margin-bottom: 18px;
+	}
+
+	&__options-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__options-item {
+		position: relative;
+		line-height: 222%;
+		padding-left: 26px;
+		text-transform: lowercase;
+		&::before {
+			content: url(../../../icon/circle.svg);
+			position: absolute;
+			display: block;
+			top: 0px;
+			left: 0px;
+		}
+	}
+}

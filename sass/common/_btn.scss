@@ -13,7 +13,9 @@
 	font-weight: 500;
 	line-height: 200%;
 	border-radius: 3px;
-	padding: 10px 46px 10px;
+	border: none;
+	cursor: pointer;
+	padding: 10px 51px 10px;
 	transition-duration: 0.1s;
 
 	&:hover {
@@ -21,7 +23,8 @@
 	}
 
 	&:active { 
-		padding: 13px 46px 7px;
+		padding: 13px 51px 7px;
+		background-color: variables.$color-primary1;
 		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
 	}
 }
