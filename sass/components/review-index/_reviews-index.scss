@@ -1,0 +1,105 @@
+@use "../../common";
+
+.reviews {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 1600px;
+		height: 2px;
+		top: -1px;
+		left: -75px;
+		background-color: common.$color-secondary11;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 1600px;
+		height: 2px;
+		bottom: -1px;
+		left: -75px;
+		background-color: common.$color-secondary11;
+	}
+
+	&__inner {
+		padding: 98px 0px 80px;
+	}
+
+	&__top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 41px;
+	}
+
+	&__top-icon {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+
+		margin-bottom: 14px;
+	}
+
+	&__top-title {
+		@extend .title-h1;
+	}
+
+	&__top-arrow {
+		max-width: 155px;
+		max-height: 35px;
+		margin-top: 86px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 10px;
+	}
+
+	&__arrow-icon {
+		button {
+			@extend .button-secondary1;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: 30px;
+	}
+
+	&__items-item {
+		max-width: 456px;
+		padding: 30px 35px;
+		border: 1px solid common.$color-secondary11;
+	}
+
+	&__item-title {
+		margin-bottom: 18px;
+		h3 {
+			@extend .title-h3;
+		}
+	}
+
+	&__item-text {
+		font-size: 16px;
+		line-height: 156%;
+	}
+
+	&__item-text--mb18 {
+		margin-bottom: 8px;
+	}
+
+	&__item-name {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 219%;
+		margin-top: 5px;
+	}
+}
