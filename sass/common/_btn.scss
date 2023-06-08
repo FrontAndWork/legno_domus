@@ -2,7 +2,7 @@
 
 //* Padding left и right выставляем опционально!
 
-//! Кнопка зелённая заливка
+//! Кнопка зелённая заливка(side padding 51)
 .button-primary1 {
 	display: inline-block;
 	color: variables.$color-base2;
@@ -77,6 +77,60 @@
 
 	&:active {
 		padding: 13px 55px 7px;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+}
+
+//! Кнопка зелённая заливка (side padding 38)
+.button-primary4 {
+	display: inline-block;
+	color: variables.$color-base2;
+	background-color: variables.$color-primary1;
+	text-decoration: none;
+	max-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	padding: 10px 38px 10px;
+	transition-duration: 0.1s;
+
+	&:hover {
+		background-color: variables.$color-secondary5;
+	}
+
+	&:active { 
+		padding: 13px 38px 7px;
+		background-color: variables.$color-primary1;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+}
+
+//! Кнопка зелённая заливка (side padding 46)
+.button-primary5 {
+	display: inline-block;
+	color: variables.$color-base2;
+	background-color: variables.$color-primary1;
+	text-decoration: none;
+	max-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	padding: 10px 46px 10px;
+	transition-duration: 0.1s;
+
+	&:hover {
+		background-color: variables.$color-secondary5;
+	}
+
+	&:active { 
+		padding: 13px 46px 7px;
+		background-color: variables.$color-primary1;
 		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
 	}
 }

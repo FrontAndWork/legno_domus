@@ -2,15 +2,16 @@
 
 .guarantees {
 	padding: 98px 0px 80px;
+	position: relative;
 
 	&::after {
 		position: absolute;
 		content: "";
 		display: block;
-		width: 1600px;
+		width: 1620px;
 		height: 1px;
 		top: 0px;
-		left: -75px;
+		left: -0px;
 		background-color: common.$color-secondary11;
 	}
 
