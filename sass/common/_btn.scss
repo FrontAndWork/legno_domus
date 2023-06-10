@@ -29,7 +29,7 @@
 	}
 }
 
-//! Кнопка без заливки,чёрный контур!
+//! Кнопка без заливки,чёрный контур(padding 36)!
 .button-primary2 {
 	display: inline-block;
 	color: variables.$color-base1;
@@ -65,7 +65,7 @@
 	max-height: 50px;
 	font-size: 15px;
 	font-weight: 500;
-	line-heightb: 200%;
+	line-height: 200%;
 	border-radius: 3px;
 	padding: 10px 55px 10px;
 	transition-duration: 0.1s;
@@ -135,6 +135,12 @@
 	}
 }
 
+
+
+// ?-----------------------------------------
+
+
+
 //! Кнопка слайдера "вправо",белая(70x70) 
 .button-secondary1 {
 	display: inline-block;
@@ -170,7 +176,7 @@
 
 }
 
-//! Кнопка "Заказать звонок"
+//! Кнопка "Заказать звонок" (aside section)
 .button-secondary3 {
 	display: inline-block;
 	cursor: pointer;
@@ -194,3 +200,23 @@
 	}
 }
 
+//! Кнопка breadcrumbs"Акции" (padding 15)
+.button-secondary4 {
+	display: inline-block;
+	cursor: pointer;
+	padding: 2px 15px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 194%;
+	text-align: center;
+	color: variables.$color-base1;
+	background-color: variables.$color-base2;
+	border: 2px solid variables.$color-base1;
+
+	&:hover {
+		background-color: variables.$color-primary1;
+		color: variables.$color-base2;
+		border: 2px solid variables.$color-primary1;
+	}
+
+}

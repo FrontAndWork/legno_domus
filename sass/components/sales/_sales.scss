@@ -1,0 +1,70 @@
+@use "../../common";
+
+.sales {
+	padding: 50px 0px 100px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__block {
+		width: 1428px;
+		max-height: 234px;
+		border: 1px solid common.$color-secondary4;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__block-img {
+		width: 330px;
+		height: 234px;
+		background-repeat: no-repeat;
+		background-position:center center;
+		background-size: cover;
+
+		&--img017 {
+			background-image: url(../../../images/sale/017.jpg);
+		}
+		&--img018 {
+			background-image: url(../../../images/sales/018.jpg);
+		}
+		&--img019 {
+			background-image: url(../../../images/sales/019.jpg);
+		}
+	}
+
+	&__block-disc {
+		padding: 38px 0px 50px 50px;
+	}
+
+	&__block-title {
+		margin-bottom: 7px;
+		h2 {
+			@extend .title-h2;
+		}
+	}
+
+	&__block-text {
+		margin-bottom: 20px;
+		p {
+			line-height: 194%;
+		}
+	}
+
+	&__block-link {
+		a {
+			@extend .button-primary2;
+		}
+	}
+}

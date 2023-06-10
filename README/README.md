@@ -1,24 +1,11 @@
 <!--* Сделанно -->
 
-1.Собрал цвета в переменные.
-
-2.Связал SCSS файлы между собой(опробовал @use и @forward).
-
-3.Подготовил заголовки первого,второго уровны и третьего уровня,прочий текст в файле title.scss, что бы применять через @extends.
-
-4.Сохранил все иконки и изображения из макета.
-
-5.Собираю кнопки в файле btn.scss(сразу с состояниями),сделал две,с зелёной заливкой,и прозрачную с чёрным контуром.Доделать все нужные кнопки!
-
-6.Подготовить классы wrapper,inner,container.
-
-7.Прижать foooter к низу страницы.
-
-8.Решить момент с текстом в кнопке при active.
-
+1.creat "sales" page,add section "sales" in "sales" page.Complited.
+2.creat "sale" page,add section "sale", "sale-header" in "sale" page.Complited.
+ 
 ------------------------------------------------
 
 <!--! Нужно сделать -->
 
-<!--! Добавил секцию blueprint -->
-<!--! Добавил секцию recommended -->
+1.add to git complited "sales" page,and "sales" section!
+2.add to git "sale" page,add section "sale", "sale-header" in "sale" page!

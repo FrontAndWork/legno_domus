@@ -1,0 +1,108 @@
+@use "../../common";
+
+.sale {
+	padding: 50px 0px 100px 0px;
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 43px;
+	}
+
+	&__image {
+		width: 446px;
+		height: 316px;
+		margin-left: 43px;
+		background-image: url(../../../images/sale/017.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&__title {
+		margin-bottom: 8px;
+		h2 {
+			@extend .title-h2;
+		}
+	}
+
+	&__text {
+		margin-bottom: 15px;
+		p {
+			line-height: 194%;
+		}
+	}
+
+	&__overlist {
+		margin-bottom: 5px;
+		span {
+			font-weight: 500;
+			line-height: 194%;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__list-item {
+		margin-bottom: 12px;
+		position: relative;
+		padding-left: 26px;
+		line-height: 222%;
+		&::before {
+			content: url(../../../icon/circle.svg);
+			position: absolute;
+			display: block;
+			top: 0px;
+			left: 0px;
+		}
+	}
+	
+	&__sublist {
+		margin-bottom: 29px;
+		span {
+			line-height: 194%;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 2px;
+		padding: 22px 89px 30px 42px;
+		background-color: common.$color-primary2;
+	}
+
+	&__tel {
+		margin-left: 30px;
+		a {
+			color: common.$color-base1;
+			position: relative;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 250%;
+			&:before {
+				content: url(../../../icon/tel.svg);
+				position: absolute;
+				display: block;
+				top: -7px;
+				left: -30px;
+			}
+		}
+	}
+
+	&__adderss {
+		p {
+			color: common.$color-base1;
+			line-height: 156%;
+		}
+	}
+}

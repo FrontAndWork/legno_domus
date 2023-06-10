@@ -1,0 +1,60 @@
+@use "../../common";
+
+.sale-header {
+	position: relative;
+	padding: 42px 0px 61px 0px;
+
+	&::before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 1620px;
+		height: 1px;
+		bottom: 0px;
+		left: -95px;
+		background-color: common.$color-secondary11;
+	}
+
+	&__breadcrumbs {
+		display: flex;
+		flex-direction: row;
+		align-items: center;	
+		margin-bottom: 13px;	
+	}
+
+	&__breadcrumbs-icon {
+		margin-right: 25px;
+	}
+
+	&__icon-svg {
+		&:hover {
+			path {
+				fill: common.$color-primary1;
+			}
+		}
+	}
+
+	&__breadcrumbs-link {
+
+		a {
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "";
+				display: block;
+				width: 27px;
+				height: 2px;
+				top: 19px;
+				left: -28px;
+				background-color: common.$color-base1;
+			}
+			@extend .button-secondary4;
+		}
+	}
+
+	&__title {
+		h1 {
+			@extend .title-h1;
+		}
+	}
+}
