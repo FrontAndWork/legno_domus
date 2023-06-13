@@ -1,0 +1,297 @@
+@use "../../common";
+
+.contacts {
+	
+	&__inner {
+		padding: 51px 0 100px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__manager {
+		position: relative;
+		max-width: 456px;
+		max-height: 275px;
+		padding: 27px 140px 29px 35px;
+		border: 1px solid common.$color-secondary4;
+
+		&::before {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/manager.svg);
+			top: 21px;
+			right: 31px;
+		}
+	}
+
+	&__manager-title {
+		margin-bottom: 9px;
+		span {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 219%;
+		}
+	}
+
+	&__manager-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	
+	&__manager-item {
+		position: relative;
+		padding-left: 24px;
+		font-size: 16px;
+		line-height: 219%;
+
+		&--mob::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/mob.svg);
+			top: 4px;
+			left: 0px;
+		}
+		
+		&--circletel::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/tel-circle.svg);
+			top: 2px;
+			left: 0px;
+		}
+		&--telcall::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/tel-call.svg);
+			top: 2px;
+			left: 0px;
+		}
+		&--mail::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/mail.svg);
+			top: 2px;
+			left: 0px;
+		}
+
+		&--clock::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/clock.svg);
+			top: 2px;
+			left: 0px;
+		}
+
+		button {
+			background-color: transparent;
+			cursor: pointer;
+			padding: 0px;
+			border: none;
+			@extend .ul-green;
+		}
+	}
+
+	&__item-link {
+		@extend .ul-green;
+	}
+
+	&__offices {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: 30px;
+	}
+
+	&__office {
+		width: 456px;
+		border: 1px solid common.$color-secondary4;
+	}
+	
+	&__office1 {
+		position: relative;
+		max-width: 456px;
+		&::before {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/office.svg);
+			top: 21px;
+			right: 30px;
+		}
+	}
+	
+	&__office1-cont {
+		padding: 26px 6px 27px 38px;
+		border-bottom: 1px solid common.$color-secondary4;
+	}
+
+	&__office1-title {
+		margin-bottom: 4px;
+		span {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 219%;
+		}
+	}
+
+	&__office1-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__office1-item {
+		position: relative;
+		padding-left: 24px;
+		font-size: 16px;
+		line-height: 219%;
+
+		&--mob::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/mob.svg);
+			top: 4px;
+			left: 0px;
+		}
+		
+		&--circletel::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/tel-circle.svg);
+			top: 2px;
+			left: 0px;
+		}
+		&--telcall::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/tel-call.svg);
+			top: 2px;
+			left: 0px;
+		}
+		&--geo::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/geo.svg);
+			top: 2px;
+			left: 0px;
+		}
+
+		&--clock::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/clock.svg);
+			top: 2px;
+			left: 0px;
+		}
+
+		button {
+			background-color: transparent;
+			cursor: pointer;
+			padding: 0px;
+			border: none;
+			@extend .ul-green;
+		}
+	}
+
+	&__office1-map {
+		width: 456px;
+		height: 332px;
+	}
+
+	&__office2 {
+		position: relative;
+		max-width: 456px;
+		&::before {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/office.svg);
+			top: 21px;
+			right: 30px;
+		}
+	}
+	
+	&__office2-cont {
+		padding: 26px 6px 27px 38px;
+		border-bottom: 1px solid common.$color-secondary4;
+	}
+
+	&__office2-title {
+		margin-bottom: 4px;
+		span {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 219%;
+		}
+	}
+
+	&__office2-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__office2-item {
+		position: relative;
+		padding-left: 24px;
+		font-size: 16px;
+		line-height: 219%;
+
+		&--mob::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/mob.svg);
+			top: 4px;
+			left: 0px;
+		}
+		
+		&--circletel::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/tel-circle.svg);
+			top: 2px;
+			left: 0px;
+		}
+		&--telcall::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/tel-call.svg);
+			top: 2px;
+			left: 0px;
+		}
+		&--geo::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/geo.svg);
+			top: 2px;
+			left: 0px;
+		}
+
+		&--clock::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/clock.svg);
+			top: 2px;
+			left: 0px;
+		}
+
+		button {
+			background-color: transparent;
+			cursor: pointer;
+			padding: 0px;
+			border: none;
+			@extend .ul-green;
+		}
+	}
+
+	&__office2-map {
+		width: 456px;
+		height: 332px;
+	}
+}

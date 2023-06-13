@@ -336,7 +336,7 @@ template {
 }
 
 /* 937f6f*/
-.title-h1, .about__advantage-title, .guarantees__items-title, .sale-header__title h1 {
+.title-h1, .about__advantage-title, .guarantees__items-title, .bc-sale-header__title h1 {
   color: #000000;
   font-size: 49px;
   font-weight: 500;
@@ -558,7 +558,7 @@ template {
           box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.button-secondary4, .sale-header__breadcrumbs-link a {
+.button-secondary4, .bc-sale-header__breadcrumbs-link a {
   display: inline-block;
   cursor: pointer;
   padding: 2px 15px;
@@ -570,7 +570,7 @@ template {
   background-color: #ffffff;
   border: 2px solid #000000;
 }
-.button-secondary4:hover, .sale-header__breadcrumbs-link a:hover {
+.button-secondary4:hover, .bc-sale-header__breadcrumbs-link a:hover {
   background-color: #00AC78;
   color: #ffffff;
   border: 2px solid #00AC78;
@@ -844,11 +844,11 @@ body {
   text-align: center;
 }
 
-.sale-header {
+.bc-sale-header {
   position: relative;
   padding: 42px 0px 61px 0px;
 }
-.sale-header::before {
+.bc-sale-header::before {
   position: absolute;
   content: "";
   display: block;
@@ -858,7 +858,7 @@ body {
   left: -95px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.sale-header__breadcrumbs {
+.bc-sale-header__breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,16 +871,16 @@ body {
           align-items: center;
   margin-bottom: 13px;
 }
-.sale-header__breadcrumbs-icon {
+.bc-sale-header__breadcrumbs-icon {
   margin-right: 25px;
 }
-.sale-header__icon-svg:hover path {
+.bc-sale-header__icon-svg:hover path {
   fill: #00AC78;
 }
-.sale-header__breadcrumbs-link a {
+.bc-sale-header__breadcrumbs-link a {
   position: relative;
 }
-.sale-header__breadcrumbs-link a::before {
+.bc-sale-header__breadcrumbs-link a::before {
   position: absolute;
   content: "";
   display: block;

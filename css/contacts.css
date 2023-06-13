@@ -344,7 +344,7 @@ template {
   margin: 0;
 }
 
-.title-h2, .about__advantage-text, .about__title-list, .about__offers-title, .guarantees__item-title h2, .guarantees__text-title h2, .sales__block-title h2 {
+.title-h2, .about__advantage-text, .about__title-list, .about__offers-title, .guarantees__item-title h2, .guarantees__text-title h2 {
   color: #000000;
   font-size: 24px;
   font-weight: 500;
@@ -372,7 +372,7 @@ template {
   line-height: 187%;
 }
 
-.ul-green {
+.ul-green, .contacts__manager-item button, .contacts__item-link, .contacts__office1-item button, .contacts__office2-item button {
   line-height: 156%;
   text-decoration-line: underline;
   color: #00AC78;
@@ -404,7 +404,7 @@ template {
           box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.button-primary2, .sales__block-link a {
+.button-primary2 {
   display: inline-block;
   color: #000000;
   background-color: transparent;
@@ -419,11 +419,11 @@ template {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
 }
-.button-primary2:hover, .sales__block-link a:hover {
+.button-primary2:hover {
   color: #ffffff;
   background-color: #000000;
 }
-.button-primary2:active, .sales__block-link a:active {
+.button-primary2:active {
   padding: 13px 36px 7px;
   background-color: #626262;
   -webkit-box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -894,10 +894,45 @@ body {
 .title-header__icon-svg:hover path {
   fill: #00AC78;
 }
-.sales {
-  padding: 50px 0px 100px;
+.contacts__inner {
+  padding: 51px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.sales__inner {
+.contacts__manager {
+  position: relative;
+  max-width: 456px;
+  max-height: 275px;
+  padding: 27px 140px 29px 35px;
+  border: 1px solid #CCCCCC;
+}
+.contacts__manager::before {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/manager.svg);
+  top: 21px;
+  right: 31px;
+}
+.contacts__manager-title {
+  margin-bottom: 9px;
+}
+.contacts__manager-title span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 219%;
+}
+.contacts__manager-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,10 +947,54 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.sales__block {
-  width: 1428px;
-  max-height: 234px;
-  border: 1px solid #CCCCCC;
+.contacts__manager-item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 219%;
+}
+.contacts__manager-item--mob::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/mob.svg);
+  top: 4px;
+  left: 0px;
+}
+.contacts__manager-item--circletel::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/tel-circle.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__manager-item--telcall::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/tel-call.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__manager-item--mail::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/mail.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__manager-item--clock::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/clock.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__manager-item button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+}
+.contacts__offices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,45 +1002,199 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
-.sales__block:last-child {
-  margin-bottom: 0;
+.contacts__office {
+  width: 456px;
+  border: 1px solid #CCCCCC;
 }
-.sales__block-img {
-  width: 330px;
-  height: 234px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.contacts__office1 {
+  position: relative;
+  max-width: 456px;
 }
-.sales__block-img--img017 {
-  background-image: url(../../../images/sale/017.jpg);
+.contacts__office1::before {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/office.svg);
+  top: 21px;
+  right: 30px;
 }
-.sales__block-img--img018 {
-  background-image: url(../../../images/sales/018.jpg);
+.contacts__office1-cont {
+  padding: 26px 6px 27px 38px;
+  border-bottom: 1px solid #CCCCCC;
 }
-.sales__block-img--img019 {
-  background-image: url(../../../images/sales/019.jpg);
+.contacts__office1-title {
+  margin-bottom: 4px;
 }
-.sales__block-disc {
-  padding: 38px 0px 50px 50px;
+.contacts__office1-title span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 219%;
 }
-.sales__block-title {
-  margin-bottom: 7px;
+.contacts__office1-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.sales__block-text {
-  margin-bottom: 20px;
+.contacts__office1-item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 219%;
 }
-.sales__block-text p {
-  line-height: 194%;
+.contacts__office1-item--mob::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/mob.svg);
+  top: 4px;
+  left: 0px;
 }
+.contacts__office1-item--circletel::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/tel-circle.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office1-item--telcall::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/tel-call.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office1-item--geo::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/geo.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office1-item--clock::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/clock.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office1-item button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+}
+.contacts__office1-map {
+  width: 456px;
+  height: 332px;
+}
+.contacts__office2 {
+  position: relative;
+  max-width: 456px;
+}
+.contacts__office2::before {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/office.svg);
+  top: 21px;
+  right: 30px;
+}
+.contacts__office2-cont {
+  padding: 26px 6px 27px 38px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.contacts__office2-title {
+  margin-bottom: 4px;
+}
+.contacts__office2-title span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 219%;
+}
+.contacts__office2-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contacts__office2-item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 219%;
+}
+.contacts__office2-item--mob::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/mob.svg);
+  top: 4px;
+  left: 0px;
+}
+.contacts__office2-item--circletel::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/tel-circle.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office2-item--telcall::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/tel-call.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office2-item--geo::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/geo.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office2-item--clock::after {
+  position: absolute;
+  display: block;
+  content: url(../../../icon/clock.svg);
+  top: 2px;
+  left: 0px;
+}
+.contacts__office2-item button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+}
+.contacts__office2-map {
+  width: 456px;
+  height: 332px;
+}
+
 .guarantees {
   padding: 98px 0px 80px;
   position: relative;
@@ -1321,4 +1554,4 @@ body {
   color: #000000;
   line-height: 156%;
 }
-/*# sourceMappingURL=sales.css.map */
+/*# sourceMappingURL=contacts.css.map */
