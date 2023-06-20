@@ -505,6 +505,32 @@ template {
           box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.button-primary6 {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #00AC78;
+  text-decoration: none;
+  max-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 200%;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 19px 10px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+.button-primary6:hover {
+  background-color: #04D999;
+}
+.button-primary6:active {
+  padding: 13px 19px 7px;
+  background-color: #00AC78;
+  -webkit-box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .button-secondary1 {
   display: inline-block;
   max-width: 70px;

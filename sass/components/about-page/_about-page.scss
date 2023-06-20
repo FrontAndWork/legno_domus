@@ -1,0 +1,135 @@
+@use "../../common";
+
+.about-page {
+
+	&__inner{
+		padding: 48px 0 100px;
+	}
+
+	&__about {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: 72px;
+		margin-bottom: 33px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__text-disc {
+		margin-bottom: 21px;
+		h2 {
+			@extend .title-h2;
+		}
+	}
+
+	&__text-block {
+		margin-bottom: 40px;
+		padding: 19px 48px 22px 26px;
+		background-color: common.$color-primary2;
+		p {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 150%;
+		}
+	}
+
+	&__text-overlist {
+		margin-bottom: 11px;
+		h2 {
+			@extend .title-h2;
+		}
+	}
+
+	&__text-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 11px;
+	}
+
+	&__text-item {
+		position: relative;
+		padding-left: 23px;
+		line-height: 156%;
+		&::after {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/circle.svg);
+			top: 0px;
+			left: 0px;
+		}
+	}
+
+	&__image-img {
+		img {
+			background-color: #999;
+			background-repeat: no-repeat;
+			background-position: center center; // x y
+			background-size: cover;
+		}
+	}
+
+	&__image-items {
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
+		align-items: center;
+		column-gap: 50px;
+		padding: 51px 0 0 0;
+	}
+
+	&__image-item {
+		width: 205px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4px;
+	}
+
+	&__item-text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 125%;
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 60px;
+		h2 {
+			@extend .title-h2;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 11px;
+		width: 460px;
+		padding: 18px 75px 30px 31px;
+		border: 1px solid common.$color-secondary4;
+		h2 {
+			@extend .title-h2;
+		}
+		button {
+			@extend .button-primary6;
+		}
+	}
+}

@@ -135,6 +135,33 @@
 	}
 }
 
+//! Кнопка зелённая заливка (side padding 19)
+.button-primary6{
+	display: inline-block;
+	color: variables.$color-base2;
+	background-color: variables.$color-primary1;
+	text-decoration: none;
+	max-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	padding: 10px 19px 10px;
+	transition-duration: 0.1s;
+
+	&:hover {
+		background-color: variables.$color-secondary5;
+	}
+
+	&:active { 
+		padding: 13px 19px 7px;
+		background-color: variables.$color-primary1;
+		box-shadow: inset 0px 4px 0px variables.$color-secondary13;
+	}
+}
+
 
 
 // ?-----------------------------------------
